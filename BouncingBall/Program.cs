@@ -1,7 +1,7 @@
 ﻿using BouncingBall;
 
 var random = new Random();
-var rectangleList = new List<BouncingBall.Rectangle>();
+var rectangleList = new List<Rectangle>();
 
 for (int i = 0; i < random.Next(3, 7); i++)
 {

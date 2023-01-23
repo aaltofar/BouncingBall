@@ -36,8 +36,8 @@
         {
             _col += _speedCol;
             _row += _speedRow;
-            if (_col <= 0 || _col >= Console.WindowWidth - 4) _speedCol = -_speedCol;
-            if (_row <= 0 || _row >= Console.WindowHeight - 3) _speedRow = -_speedRow;
+            if (_col <= 0 || _col >= Console.WindowWidth - _width) _speedCol = -_speedCol;
+            if (_row <= 0 || _row >= Console.WindowHeight - _height) _speedRow = -_speedRow;
         }
     }
 }
