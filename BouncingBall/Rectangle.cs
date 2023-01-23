@@ -8,8 +8,9 @@
         private int _speedRow;
         private int _width;
         private int _height;
+        private ConsoleColor _color;
 
-        public Rectangle(int col, int row, int speedCol, int speedRow, int width, int height)
+        public Rectangle(int col, int row, int speedCol, int speedRow, int width, int height, ConsoleColor color)
         {
             _col = col;
             _row = row;
@@ -17,14 +18,16 @@
             _speedRow = speedRow;
             _width = width;
             _height = height;
+            _color = color;
         }
 
         public void Show()
         {
-            for (int i = 0; i < 4; i++)
+            for (int i = 0; i < _width; i++)
             {
-                for (int j = 0; j < 3; j++)
+                for (int j = 0; j < _height; j++)
                 {
+                    Console.ForegroundColor = _color;
                     Console.CursorLeft = _col + i;
                     Console.CursorTop = _row + j;
                     Console.Write("M");
