@@ -1,6 +1,6 @@
 ﻿namespace BouncingBall
 {
-    internal class Ball
+    internal class Rectangle
     {
         private int _col;
         private int _row;
@@ -9,7 +9,7 @@
         private int _width;
         private int _height;
 
-        public Ball(int col, int row, int speedCol, int speedRow, int width, int height)
+        public Rectangle(int col, int row, int speedCol, int speedRow, int width, int height)
         {
             _col = col;
             _row = row;
